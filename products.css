@@ -1,0 +1,115 @@
+/* HTML STRUCTURE */
+/* Step -1 - parentContainer */
+/* step -2 - component */
+/* step -3 - componentContainer */
+/* step -4 - row */
+/* step -5 - column */
+/* step -6 - subColumn */
+/* step -7 - contentContainer */
+/* step -8 - content */
+
+/* parent Container - default css style */
+
+
+/* step -2 - component */
+.products {
+    /* background-color: rgb(241, 11, 11);   */
+
+}
+
+/* step -3 - componentContainer */
+.productsContainer {
+    /* background-color: rgb(91, 226, 12); */
+
+}
+
+/* step -4 - row */
+.productsBody {
+    /* background-color: rgb(255, 255, 255); */
+
+
+}
+
+/* step -5 - column */
+.productsBlock {
+    /* background-color: #fc03c6; */
+
+}
+
+/* step -6 - subColumn */
+.productsBox {
+    /* background-color: #dfbd4d; */
+
+}
+
+.productsBox {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(180deg, rgb(87, 231, 241), rgb(224, 127, 248));
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.productsBox:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.cardHeader {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #e9eb55;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.cardMain {
+    font-family: monospace;
+    font-size: 1.6rem;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    white-space: pre-wrap;
+}
+
+.cardFooter {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cardFooter button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cardFooter button:hover {
+    background-color: #0056b3;
+}
+
+.scrollTopBtn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 1rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  z-index: 9999;
+  display: none; /* hide by default */
+}
+
+.scrollTopBtn:hover {
+  background-color: #0056b3;
+}

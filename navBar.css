@@ -1,0 +1,112 @@
+/* HTML STRUCTURE */
+/* Step -1 - parentContainer */
+/* step -2 - component */
+/* step -3 - componentContainer */
+/* step -4 - row */
+/* step -5 - column */
+/* step -6 - subColumn */
+/* step -7 - contentContainer */
+/* step -8 - content */
+
+/* parent Container - default css style */
+
+
+/* step -2 - component */
+.navBar {
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #b7f4ff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    padding: 2rem 0rem;
+
+}
+
+/* step -3 - componentContainer */
+.navBarContainer {
+    /* background-color: rgb(255, 255, 255); */
+
+}
+
+/* step -4 - row */
+.navBarBody {
+    /* background-color: rgb(255, 255, 255); */
+
+}
+
+/* step -5 - column */
+.logoBlock {
+    /* background-color: #ffffff; */
+
+}
+
+.linkBlock {
+    /* background-color: #ffffff; */
+
+}
+
+/* step -6 - subColumn */
+.logoBox {
+    /* background-color: #ffffff; */
+
+}
+
+.linkBox {
+    /* background-color: #ffffff; */
+    width: 100%;
+
+}
+
+
+/* step -7 - contentContainer */
+.navlinks {
+    list-style: none;
+    /* bullet remove */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* horizontal layout */
+    gap: 20px;
+    /* spacing between items */
+    flex-wrap: wrap;
+}
+
+.navlinks li {
+    padding: 8px 12px;
+    background-color: #58f1f7;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.linkBox ul li:hover {
+    background-color: #d250fa;
+}
+
+.linkBox ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.linkBox ul li a:hover {
+    color: #007bff;
+    /* blue on hover */
+}
+
+
+.searchContainer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#searchBox {
+  width: 90%;
+  max-width: 400px;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}

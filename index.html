@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>title</title>
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="navBar.css">
+
+  <link rel="stylesheet" href="./products.css">
+
+
+</head>
+
+<body>
+  <header> <!--parentContainer-->
+    <nav class="navBar"> <!--component-->
+      <div class="navBarContainer"> <!--componentContainer-->
+        <div class="navBarBody grid-1"> <!--row1-->
+          <div class="linkBlock"> <!--column2-->
+            <div class="linkBox dflex"> <!--subColumn2-->
+              <ul class="navlinks"> <!--contentContainer-->
+                <li><a href="#h1Card">h1</a></li>
+                <li><a href="#h2Card">h2</a></li>
+                <li><a href="#h3Card">h3</a></li>
+                <li><a href="#h4Card">h4</a></li>
+                <li><a href="#h5Card">h5</a></li>
+                <li><a href="#h6Card">h6</a></li>
+                <li><a href="#pCard">Paragraph</a></li>
+                <li><a href="#ulCard">ul</a></li>
+                <li><a href="#liCard">li</a></li>
+                <li><a href="#aCard">a</a></li>
+                <li><a href="#buttonCard">Button</a></li>
+                <li><a href="#formCard">Form</a></li>
+                <li><a href="#inputCard">input</a></li>
+                <li><a href="#labelCard">label</a></li>
+                <li><a href="#selectCard">select</a></li>
+                <li><a href="#optionCard">option</a></li>
+                <li><a href="#textareaCard">textarea</a></li>
+                <li><a href="#tableCard">table</a></li>
+                <li><a href="#trCard">tr</a></li>
+                <li><a href="#thCard">th</a></li>
+                <li><a href="#tdCard">td</a></li>
+                <li><a href="#imgCard">img</a></li>
+                <li><a href="#flexboxCard">flexbox</a></li>
+                <li><a href="#gridCard">grid</a></li>
+                <li><a href="#staticCard">static</a></li>
+                <li><a href="#relativeCard">relative</a></li>
+                <li><a href="#absoluteCard">absolute</a></li>
+                <li><a href="#fixedCard">fixed</a></li>
+                <li><a href="#stickyCard">sticky</a></li>
+                <li><a href="#fadeinCard">fadein</a></li>
+                <li><a href="#slideinCard">slidein</a></li>
+                <li><a href="#bounceCard">bounce</a></li>
+                <li><a href="#zoominCard">zoomin</a></li>
+                <li><a href="#rotateCard">rotate</a></li>
+                <li><a href="#pulseCard">pulse</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <div class="searchContainer">
+        <input type="text" id="searchBox" placeholder="🔍 Search any tag..." onkeyup="filterCards()">
+      </div>
+    </div>
+  </header>
+  <main> <!--parentContainer-->
+    <section class="products componentSpacing"> <!--component-->
+      <div class="productsContainer align"> <!--componentContainer-->
+        <div class="productsBody grid-3"> <!--row-->
+          <div class="productsBlock" id="h1Card"> <!--column-->
+            <!-- h1 -->
+            <div class="productsBox">
+              <div class="cardHeader">&lt;h1&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #222;
+  text-align: left;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="h2Card"> <!--column-->
+            <!-- h2 -->
+            <div class="productsBox">
+              <div class="cardHeader">&lt;h2&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="h3Card"> <!--column-->
+            <!-- h3 -->
+            <div class="productsBox">
+              <div class="cardHeader">&lt;h3&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.h3 {
+  font-size: 1.872rem;
+  font-weight: 600;
+  color: #444;
+  text-align: left;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="h4Card"> <!--column-->
+            <!-- h4 -->
+            <div class="productsBox">
+              <div class="cardHeader">&lt;h4&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #555;
+   text-align: left;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="h5Card"> <!--column-->
+            <!-- h5 -->
+            <div class="productsBox">
+              <div class="cardHeader">&lt;h5&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.h5 {
+  font-size: 1.328rem;
+  font-weight: 500;
+  color: #666;
+   text-align: left;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="h6Card"> <!--column-->
+            <!-- h6 -->
+            <div class="productsBox">
+              <div class="cardHeader">&lt;h6&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.h6 {
+  font-size:1.072rem;
+  font-weight: 500;
+  color: #777;
+   text-align: left;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="pCard"> <!--column-->
+            <!-- p -->
+            <div class="productsBox">
+              <div class="cardHeader">&lt;p&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #444;
+   text-align: left;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+ 
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="ulCard"> <!--column-->
+            <!-- UL Tag -->
+            <div class="productsBox">
+              <div class="cardHeader">&lt;ul&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.ul {
+  display: flex;                                  
+  background-color: #fff3cd;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="liCard"> <!--column-->
+            <!-- LI Tag -->
+            <div class="productsBox">
+              <div class="cardHeader">&lt;li&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.li {
+    font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  padding: 0.5rem 1rem;
+  line-height: 1.6;
+ 
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="aCard"> <!--column-->
+            <!-- Anchor Tag -->
+            <div class="productsBox">
+              <div class="cardHeader">&lt;a&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.a:hover {
+  background-color: #dfe6e9;
+  color: #000;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="buttonCard"> <!--column-->
+            <!-- Button Tag -->
+            <div class="productsBox">
+              <div class="cardHeader">&lt;button&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.button {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+  background-color: #007bff;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="formCard"> <!--column-->
+            <!-- form -->
+            <div class="productsBox">
+              <div class="cardHeader">&lt;form&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="inputCard"> <!--column-->
+            <!-- input -->
+            <div class="productsBox">
+              <div class="cardHeader">&lt;input&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.6rem;
+  margin-bottom: 1.6rem;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="labelCard">
+            <div class="productsBox">
+              <div class="cardHeader">&lt;label&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.label {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="selectCard">
+            <div class="productsBox">
+              <div class="cardHeader">&lt;select&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.select {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.6rem;
+  background-color: #fff;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="optionCard">
+            <div class="productsBox">
+              <div class="cardHeader">&lt;option&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.option {
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  background-color: #fff;
+  color: #333;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="textareaCard"> <!--column-->
+            <!-- textarea -->
+            <div class="productsBox">
+              <div class="cardHeader">&lt;textarea&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.6rem;
+  min-height: 120px;
+  resize: vertical;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="tableCard"> <!--column-->
+            <!-- table -->
+            <div class="productsBox">
+              <div class="cardHeader">&lt;table&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="trCard"> <!--column-->
+            <!-- tr -->
+            <div class="productsBox">
+              <div class="cardHeader">&lt;tr&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.tr {
+  border-bottom: 1px solid #ddd;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="thCard"> <!--column-->
+            <!-- th -->
+            <div class="productsBox">
+              <div class="cardHeader">&lt;th&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.th {
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.6rem;
+  background-color: #f1f1f1;
+  font-weight: bold;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="tdCard"> <!--column-->
+            <!-- td -->
+            <div class="productsBox">
+              <div class="cardHeader">&lt;td&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.td {
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: #333;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="imgCard">
+            <div class="productsBox">
+              <div class="cardHeader">&lt;img&gt;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.6rem;
+  display: block;
+  margin-bottom: 1rem;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="flexboxCard"> <!--column-->
+            <div class="productsBox">
+              <div class="cardHeader">Flexbox</div>
+              <div class="cardMain">
+                <pre class="cssCode">.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="gridCard"> <!--column-->
+            <div class="productsBox">
+              <div class="cardHeader">Grid</div>
+              <div class="cardMain">
+                <pre class="cssCode">.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="staticCard">
+            <div class="productsBox">
+              <div class="cardHeader">position: static;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.staticPosition {
+  position: static; /* default position */
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="relativeCard">
+            <div class="productsBox">
+              <div class="cardHeader">position: relative;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.relativeBox {
+  position: relative;
+  top: 10px;
+  left: 20px;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="absoluteCard">
+            <div class="productsBox">
+              <div class="cardHeader">position: absolute;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.absoluteBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="fixedCard">
+            <div class="productsBox">
+              <div class="cardHeader">position: fixed;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.fixedHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="stickyCard">
+            <div class="productsBox">
+              <div class="cardHeader">position: sticky;</div>
+              <div class="cardMain">
+                <pre class="cssCode">.stickyBox {
+  position: sticky;
+  top: 0;
+  background: #eee;
+  z-index: 999;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="fadeinCard">
+            <div class="productsBox">
+              <div class="cardHeader">Fade In</div>
+              <div class="cardMain">
+                <pre class="cssCode">@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fadeIn {
+  animation: fadeIn 2s ease-in-out;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="slideinCard">
+            <div class="productsBox">
+              <div class="cardHeader">Slide In Left ➡️</div>
+              <div class="cardMain">
+                <pre class="cssCode">@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.slideIn {
+  animation: slideIn 1s ease-out;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="bounceCard">
+            <div class="productsBox">
+              <div class="cardHeader">Bounce</div>
+              <div class="cardMain">
+                <pre class="cssCode">@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.bounce {
+  animation: bounce 0.8s infinite;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="zoominCard">
+            <div class="productsBox">
+              <div class="cardHeader">Zoom In</div>
+              <div class="cardMain">
+                <pre class="cssCode">@keyframes zoomIn {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.zoomIn {
+  animation: zoomIn 0.5s ease-in-out;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="rotateCard">
+            <div class="productsBox">
+              <div class="cardHeader">Rotate</div>
+              <div class="cardMain">
+                <pre class="cssCode">@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.rotate {
+  animation: rotate 2s linear infinite;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="productsBlock" id="pulseCard">
+            <div class="productsBox">
+              <div class="cardHeader">Pulse</div>
+              <div class="cardMain">
+                <pre class="cssCode">@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.pulse {
+  animation: pulse 1s infinite;
+}</pre>
+              </div>
+              <div class="cardFooter">
+                <button onclick="copyCSS(this)">Copy CSS</button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button class="scrollTopBtn" onclick="scrollToTop()">
+              ⬆️ Top
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer> <!--parentContainer-->
+
+
+  </footer>
+
+
+  <script src="./copycss.js"></script>
+
+</body>
+
+</html>
